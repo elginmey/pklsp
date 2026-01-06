@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LSP - SDM TIK</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/16.1.1/build.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="css/dripicons.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/meanmenu.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/stylee.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="lsp.png" />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .header {
+        background-color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+      }
+      .header img {
+        height: 50px;
+      }
+      .header nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+      }
+      .header .right {
+        display: flex;
+        align-items: center;
+      }
+      .header .right span {
+        margin-right: 10px;
+      }
+      .main-content {
+        padding: 20px;
+        background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+        display: flex;
+        justify-content: space-between;
+      }
+      .main-content .content {
+        width: 70%;
+      }
+      .main-content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .main-content .date {
+        color: #888;
+        margin-bottom: 20px;
+      }
+      .main-content img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      .main-content p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      .social-media {
+        margin-bottom: 20px;
+      }
+      .social-media a {
+        margin: 0 5px;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .social-media .facebook { background: #3b5998; }
+      .social-media .twitter { background: #1da1f2; }
+      .social-media .pinterest { background: #bd081c; }
+      .social-media .linkedin { background: #0077b5; }
+      .sidebar {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        width: 28%;
+      }
+      .sidebar h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .sidebar .news-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+
+      .sidebar .news-item img {
+        width: 140px; /* Sesuaikan ukuran */
+        height: 140px; /* Sesuaikan ukuran */
+        margin-right: 10px;
+        border-radius: 5px;
+        object-fit: cover;
+      }
+      .sidebar .news-item .news-content {
+        flex: 1;
+      }
+      .sidebar .news-item .news-content h3 {
+        font-size: 14px;
+        margin: 0;
+      }
+      .sidebar .news-item .news-content .date {
+        color: #888;
+        font-size: 12px;
+      }
+      .related-content {
+        display: flex;
+        justify-content: space-between;
+      }
+      .related-content .related-item {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 48%;
+      }
+      .related-content .related-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      .related-content .related-item h3 {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+      }
+      .related-content .related-item a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer .left, .footer .center, .footer .right {
+        width: 30%;
+      }
+      .footer .left img {
+        height: 50px;
+        margin-bottom: 10px;
+      }
+      .footer .left p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .footer .center h3, .footer .right h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .footer .center a, .footer .right p {
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 5px;
+        display: block;
+      }
+      .footer .social-media a {
+        margin: 0 5px;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .footer .social-media .facebook { background: #3b5998; }
+      .footer .social-media .twitter { background: #1da1f2; }
+      .footer .social-media .pinterest { background: #bd081c; }
+      .footer .social-media .linkedin { background: #0077b5; }
+      .footer .copyright {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #888;
+      }
+      @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .main-content .content {
+      width: 100%;
+    }
+    .sidebar {
+      order: 2;
+      width: 100%;
+      margin-top: 30px;
+    }
+    .content {
+      order: 1;
+      width: 100%;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="lsp.png" alt="Logo" width="150" height="auto" class="logo-lsp" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LSP SDM TIK</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="profilDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i> Profil </a>
+                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                  <li><a class="dropdown-item" href="visi-misi.html">Visi-Misi</a></li>
+                  <li><a class="dropdown-item" href="struktur organisasi.html">Struktur Organisasi</a></li>
+                  <li><a class="dropdown-item" href="lihatmitra.php">Mitra Kerja</a></li>
+                  <li><a class="dropdown-item" href="tentanglsp.html">Tentang LSP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="sertifikasiDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-certificate"></i> Sertifikasi </a>
+                <ul class="dropdown-menu" aria-labelledby="sertifikasiDropdown">
+                  <li><a class="dropdown-item" href="skema.html">Skema Sertifikasi</a></li>
+                  <li><a class="dropdown-item" href="lihat_tuk.php">Tempat Uji Kompetensi</a></li>
+                  <li><a class="dropdown-item" href="lihatasesor.php">Asesor Kompetensi</a></li>
+                  <li><a class="dropdown-item" href="skkni.html">SKKNI</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="mediaDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-photo-video"></i> Media </a>
+                <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                  <li>
+                    <a class="dropdown-item" href="berita.html"><i class="fas fa-newspaper"></i> Berita</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="gallery.html"><i class="fas fa-images"></i> Galeri</a>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/lsp-sdmtik-898955308/?originalSubdomain=id"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/lsp_sdmtik?igsh=ajJxMmQwYnR2cWFk"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://youtube.com/@lspsdmtik4858?si=HNf4TLqGRYRS4Nbr"><i class="fab fa-youtube"></i> YouTube</a></li>
+                  <li><a class="dropdown-item" href="https://facebook.com/usernameFacebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Profil </a>
+              <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                <li><a class="dropdown-item" href="visi-misi.html">Visi-Misi</a></li>
+                <li><a class="dropdown-item" href="struktur organisasi.html">Struktur Organisasi</a></li>
+                <li><a class="dropdown-item" href="lihatmitra.php">Partnership / Mitra Kerja</a></li>
+                <li><a class="dropdown-item" href="tentanglsp.html">Tentang LSP</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="sertifikasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Informasi Sertifikasi </a>
+              <ul class="dropdown-menu" aria-labelledby="sertifikasiDropdown">
+                <li><a class="dropdown-item" href="skema.html">Skema Sertifikasi</a></li>
+                <li><a class="dropdown-item" href="lihat_tuk.php">Tempat Uji Kompetensi</a></li>
+                <li><a class="dropdown-item" href="lihatasesor.php">Asesor Kompetensi</a></li>
+                <li><a class="dropdown-item" href="skkni.html">SKKNI</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Media </a>
+              <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                <li>
+                  <a class="dropdown-item" href="berita.html"><i class="fas fa-newspaper"></i> Berita</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html"><i class="fas fa-images"></i> Galeri</a>
+                </li>
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/lsp-sdmtik-898955308/?originalSubdomain=id"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/lsp_sdmtik?igsh=ajJxMmQwYnR2cWFk"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a class="dropdown-item" href="https://youtube.com/@lspsdmtik4858?si=HNf4TLqGRYRS4Nbr"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a class="dropdown-item" href="https://facebook.com/usernameFacebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="content">
+        
+        
+        <img alt=" Logo LSP" height="300" src="tentang LSP.jpg" width="1200" style="border-radius: 10px;"/>
+        <p style="text-align: justify;"> <br>
+            LSP SDM TIK Pihak 3 mendapatkan dukungan dari asosiasi industri dan dukungan dari regulator kementerian komunikasi dan informatika (Kominfo) No. B- 59/KOMINFO/BLSDM/KS.01.07/05/2021 dengan harapan bisa berperan penting dalam peningkatan daya saing dan produkvitas SDM tenaga kerja di bidang TI.Badan Nasional Sertifikasi Profesi memberikan lisensi dengan surat keputusan No . KEP.1342/BNSP/VII/2021 dan lisensi No. BNSP-LSP1977-ID kepada LSP SDM TIK Pihak 3 yang masa berlakunya sampai 5 Juli 2026. LSP SDM TIK akan melakukan serta memastikan sertifikasi yang credible untuk mengantarkan kualitas SDM dan industry yang accountable di bidang TI.Tujuan Sertifikasi profesi untuk memastikan pada kompetensi seseorang yang telah didapatkan melalui pembelajaran, pelatihan, maupun pengalaman kerja. Kredibilitas suatu sertifikasi sangat ditentukan oleh organisasi atau lembaga pemberi sertifikasinya.
+        </p>
+        <h1>Tentang LSP</h1>
+    <p>Lembaga Sertifikasi Profesi (LSP) adalah lembaga yang berfungsi untuk meningkatkan kompetensi sumber daya manusia di bidang Teknologi Informasi dan Komunikasi (TIK). LSP berperan penting dalam memastikan bahwa tenaga kerja memiliki keterampilan dan pengetahuan yang sesuai dengan standar industri.</p>
+
+    <h2>Fungsi dan Tugas LSP SDM TIK</h2>
+    <p>LSP memiliki fungsi melaksanakan sertifikasi kompetensi dengan tugas:</p>
+    <ul>
+        <li> Menyusun dan mengembangkan skema sertifikasi</li>
+        <li> Membuat perangkat asesmen dan materi uji kompetensi</li>
+        <li> Menyediakan tenaga penguji (asesor)</li>
+        <li> Melaksanakan sertifikasi</li>
+        <li> Melaksanakan surveilan pemeliharaan sertifikasi</li>
+        <li> Menetapkan persyaratan, memverifikasi dan menetapkan TUK</li>
+        <li> Memelihara kinerja asesor dan TUK</li>
+        <li> Mengembangkan pelayanan sertifikasi</li>
+    </ul>
+
+    <h2>Wewenang LSP SDM TIK</h2>
+    <p>LSP memiliki kewenangan antara lain:</p>
+    <ul>
+        <li> Menerbitkan sertifikat kompetensi sesuai pedoman BNSP</li>
+        <li> Mencabut atau membatalkan sertifikat kompetensi</li>
+        <li> Memberikan sanksi kepada asesor dan TUK yang melanggar aturan</li>
+        <li> Mengusulkan skema baru</li>
+        <li> Mengusulkan dan atau menetapkan biaya uji kompetensi</li>
+    </ul> <br>
+
+        <div class="social-media">
+          <a class="facebook" href="https://facebook.com/usernameFacebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="twitter" href="https://twitter.com/usernameTwitter"><i class="fab fa-twitter"></i></a>
+          <a class="pinterest" href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+          <a class="linkedin" href="https://www.linkedin.com/in/lsp-sdmtik-898955308/?originalSubdomain=id"><i class="fab fa-linkedin"></i></a>
+        </div> <br>
+        <div class="related-content">
+          <div class="related-item">
+            <img alt="Penandatanganan MOU BNSP dan BPSDM Kemendagri" height="200" src="./assets/images/berita 1.jpg" width="300"/>
+            <h3>Pentingnya Sertifikasi Kompetensi LSP di Era Digital</h3>
+            <a href="https://bnsp.go.id/konten/berita">Selengkapnya</a>
+          </div>
+          <div class="related-item">
+            <img alt="Seminar Nasional Model Pendidikan &amp; Sertifikasi" height="200" src="./assets/images/berita 2.jpg" width="300"/>
+            <h3>Tren Baru Sertifikasi Kompetensi di Berbagai Sektor</h3>
+            <a href="https://bnsp.go.id/konten/berita">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+   <div class="sidebar">
+    <h2>
+     Berita Terbaru
+    </h2>
+    <div class="news-item">
+     <img alt="kegiatan tes sertifikasi disukabumi" height="80" src="sukabumi.jpg" width="80"/>
+     <div class="news-content">
+      <h3>
+        kegiatan tes sertifikasi disukabumi
+      </h3>
+      <div class="date">
+       02/October/2024
+      </div>
+     </div>
+    </div>
+    <div class="news-item">
+     <img alt="Tes akumulatif guru dengan siswa" height="80" src="assets/images/kerjasama1 (7).jpg" width="80"/>
+     <div class="news-content">
+      <h3>
+        Kegaiatan KerjaSama Pelatihan antara Pihak sekolah dengan Pihak LSP 
+      </h3>
+      <div class="date">
+       02/October/2024
+      </div>
+     </div>
+    </div>
+    <div class="news-item">
+     <img alt="Penandatanganan MOU Antara LSP Penyelenggara Produk Halal Indonesia (LSP PPH) dengan Korea Muslim Federation (KMF)" height="80" src="univ.jpg" width="80"/>
+     <div class="news-content">
+      <h3>
+       Bentuk apresiasi dari pihak UIN terhadap kinerja Kami
+      </h3>
+      <div class="date">
+       02/October/2024
+      </div>
+     </div>
+    </div>
+    <div class="news-item">
+     <img alt="Ketua BNSP Serahkan Sertifikat Lisensi LSP LSK Indonesia" height="80" src="sertif.jpg" width="80"/>
+     <div class="news-content">
+      <h3>
+       penyerahkan Sertifikat Lisensi LSP-SDMTIK kepada mahasiswa
+      </h3>
+      <div class="date">
+       02/October/2024
+      </div>
+     </div>
+    </div>
+    <div class="news-item">
+     <img alt="mahasiswa yang sedang mengikuti pelatihan melakukan foto bersama" height="80" src="mahasiswa.jpg" width="80"/>
+     <div class="news-content">
+      <h3>
+        mahasiswa yang sedang mengikuti pelatihan melakukan foto bersama
+      </h3>
+      <div class="date">
+       02/October/2024
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+   <!-- FOOTER -->
+   <footer class="bg-dark">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row justify-content-between">
+          
+          <div class="col-lg-3 col-sm-6">
+           
+              <img src="logo 3.png"  alt="" width="250px" height="auto" />
+            <div class="line"></div>
+            <p>
+              LSP SDM TIK adalah Lembaga Sertifikasi Profesi Pihak 3 yang terlisensi oleh BNSP dengan surat keputusan No . KEP.1342/BNSP/VII/2021 dan lisensi No.BNSPLSP1977-ID.
+            </p>
+            <div class="social-icons pb-4">
+              <a href="https://youtube.com/@lspsdmtik4858?si=HNf4TLqGRYRS4Nbr" target="_blank">
+                <i class="ri-youtube-fill"></i> <!-- YouTube Icon -->
+              </a>
+              <a href="https://twitter.com/usernameTwitter" target="_blank">
+                <i class="ri-twitter-fill"></i> <!-- Twitter Icon -->
+              </a>
+              <a href="https://facebook.com/usernameFacebook" target="_blank">
+                <i class="ri-facebook-fill"></i> <!-- Facebook Icon -->
+              </a>
+              <a href="https://www.linkedin.com/in/lsp-sdmtik-898955308/?originalSubdomain=id" target="_blank">
+                <i class="ri-linkedin-fill"></i> <!-- LinkedIn Icon -->
+              </a>
+              <a href="https://www.instagram.com/lsp_sdmtik?igsh=ajJxMmQwYnR2cWFk" target="_blank">
+                <i class="ri-instagram-fill"></i> <!-- Instagram Icon -->
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <h5 class="mb-0 text-white">ABOUT</h5>
+            <div class="line"></div>
+            <ul>
+              <li><a href="tentanglsp.html">Tentang LSP</a></li><hr>
+              <li><a href="visi-misi.html">VISI </a></li><hr>
+              <li><a href="visi-misi.html">MISI </a></li><hr>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <h5 class="mb-0 text-white">CONTACT</h5>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"> <br></i> Ruko Ketapang Indah, Blok B2, Jl. Kyai Haji Zainul Arifin No.33 & 34, 
+                RT.4/RW.7 Krukut, Kec. Taman Sari, 
+                Kota Jakarta Barat, Kota/Kabupaten Kota Administrasi 
+                Jakarta Barat, Provinsi DKI Jakarta.
+              </li>
+              <br>
+              <li><i class="fas fa-phone-alt"></i> 021-6340960 / 0811 292 5599</li>
+              <br>
+              <li><i class="fas fa-envelope"></i> lspmsdmtik@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".buttons").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+
+          var filter = $(this).attr("data-filter");
+
+          if (filter == "all") {
+            $(".image").show(400);
+          } else {
+            $(".image")
+              .not("." + filter)
+              .hide(200);
+            $(".image")
+              .filter("." + filter)
+              .show(400);
+          }
+        });
+
+        $(".gallery").magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("fixed-top");
+        } else {
+          navbar.classList.remove("fixed-top");
+        }
+      });
+    </script>
+ </body>
+</html>
+  

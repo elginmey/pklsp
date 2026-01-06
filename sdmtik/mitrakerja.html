@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mitra Kerja - LSP SDM TIK</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/16.1.1/build.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="css/dripicons.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/meanmenu.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/stylee.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="lsp.png" />
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .controls {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .controls select, .controls button, .controls input {
+            margin-right: 10px;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .controls select {
+            width: 60px;
+        }
+        .controls button {
+            background-color: #17a2b8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .controls input {
+            flex-grow: 1;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+        th {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .btn-hubungi {
+          background-color: #17a2b8;
+          color: white;
+          padding: 10px 20px;
+          font-size: 18px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        .btn-hubungi:hover {
+           background-color: #138496;
+        }
+
+        
+    </style>
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          
+          <img src="lsp.png" alt="Logo" width="150" height="auto" class="logo-lsp" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LSP SDM TIK</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="profilDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i> Profil </a>
+                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                  <li><a class="dropdown-item" href="visi-misi.html">Visi-Misi</a></li>
+                  <li><a class="dropdown-item" href="struktur organisasi.html">Struktur Organisasi</a></li>
+                  <li><a class="dropdown-item" href="lihatmitra.php">Mitra Kerja</a></li>
+                  <li><a class="dropdown-item" href="tentanglsp.html">Tentang LSP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="sertifikasiDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-certificate"></i> Sertifikasi </a>
+                <ul class="dropdown-menu" aria-labelledby="sertifikasiDropdown">
+                  <li><a class="dropdown-item" href="skema.html">Skema Sertifikasi</a></li>
+                  <li><a class="dropdown-item" href="lihat_tuk.php">Tempat Uji Kompetensi</a></li>
+                  <li><a class="dropdown-item" href="lihTasesor.php">Asesor Kompetensi</a></li>
+                  <li><a class="dropdown-item" href="skkni.html">SKKNI</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="mediaDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-photo-video"></i> Media </a>
+                <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                  <li>
+                    <a class="dropdown-item" href="berita.html"><i class="fas fa-newspaper"></i> Berita</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="gallery.html"><i class="fas fa-images"></i> Galeri</a>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/lsp-sdmtik-898955308/?originalSubdomain=id"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/lsp_sdmtik?igsh=ajJxMmQwYnR2cWFk"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://youtube.com/@lspsdmtik4858?si=HNf4TLqGRYRS4Nbr"><i class="fab fa-youtube"></i> YouTube</a></li>
+                  <li><a class="dropdown-item" href="https://facebook.com/usernameFacebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Profil </a>
+              <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                <li><a class="dropdown-item" href="visi-misi.html">Visi-Misi</a></li>
+                <li><a class="dropdown-item" href="struktur organisasi.html">Struktur Organisasi</a></li>
+                <li><a class="dropdown-item" href="lihatmitra.php">Partnership / Mitra Kerja</a></li>
+                <li><a class="dropdown-item" href="tentanglsp.html">Tentang LSP</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="sertifikasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Informasi Sertifikasi </a>
+              <ul class="dropdown-menu" aria-labelledby="sertifikasiDropdown">
+                <li><a class="dropdown-item" href="skema.html">Skema Sertifikasi</a></li>
+                <li><a class="dropdown-item" href="tuk.php">Tempat Uji Kompetensi</a></li>
+                <li><a class="dropdown-item" href="asesor.php">Asesor Kompetensi</a></li>
+                <li><a class="dropdown-item" href="skkni.html">SKKNI</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Media </a>
+              <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                <li>
+                  <a class="dropdown-item" href="berita.html"><i class="fas fa-newspaper"></i> Berita</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html"><i class="fas fa-images"></i> Galeri</a>
+                </li>
+            <li><a class="dropdown-item" href="https://www.linkedin.com/in/lsp-sdmtik-898955308/?originalSubdomain=id"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/lsp_sdmtik?igsh=ajJxMmQwYnR2cWFk"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a class="dropdown-item" href="https://youtube.com/@lspsdmtik4858?si=HNf4TLqGRYRS4Nbr"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a class="dropdown-item" href="https://facebook.com/usernameFacebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-brand">DOWNLOAD</a>
+        </div>
+      </div>
+    </nav>
+
+    <body>
+        <div class="container">
+          <h1 style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: bold; background: linear-gradient(to right, #2E4053, #1A1D23); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mitra Kerja</h1> 
+        <div class="text-center mt-4">
+            <a href="https://linktr.ee/kontaklspsdmtik" class="btn btn-hubungi">Hubungi Kami</a>
+        </div> <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th style="text-align: center;">Jenis KerjaSama</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr></tr>
+                        <td>1</td>
+                        <td >APTIKNAS (Asosiasi Pengusaha
+                            Teknologi Informasi dan Komunikasi
+                            Nasional)</td>
+                        <td>Ruko Ketapang
+                            Indah,blok b2 no 33-
+                            34, RT.1/RW.7,
+                            Krukut, Kec. Taman
+                            Sari, Kota Jakarta
+                            Barat, Daerah
+                            Khusus Ibukota
+                            Jakarta 11140</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Asosiasi Cyber Content Indonesia
+                            (ASCI)</td>
+                        <td>Ruko Gading Park
+                            View ZC-01 No. 31-32,
+                            Jl. Boulevard Timur,
+                            RT.5/RW.11, Klp.
+                            Gading Tim., Kec. Klp.
+                            Gading, Kota Jkt
+                            Utara, Daerah Khusus
+                            Ibukota Jakarta 14240</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Cyber Media Center</td>
+                        <td>Ruko Gading Park
+                            View ZC-01 No. 31-
+                            32, Jl. Boulevard
+                            Timur, RT.5/RW.11,
+                            Klp. Gading Tim.,
+                            Kec. Klp. Gading, Jkt
+                            Utara, Daerah
+                            Khusus Ibukota
+                            Jakarta 14240</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>PT. Cybers Digital Media</td>
+                        <td>Jl. KH. Zainul Arifin,
+                            Komplek Ruko
+                            Ketapang Indah Blok
+                            B2 No. 33 & 34,
+                            Jakarta Barat 11140</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>CIPTA KERJA</td>
+                        <td>Jl. Sultan Alauddin,
+                            Komplek Ruko
+                            Permata Sari,
+                            Makassar, Sulawesi
+                            Selatan 90221</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>PT TALENTHUB DIGITAL
+                            INDONESIA (CYBERS ACADEMY)</td>
+                        <td>ESTUBIZI Business
+                            Center, Gedung
+                            Setiabudi 2 Lantai 2
+                            Suite 207B-C, Jl.
+                            H.R. Rasuna Said
+                            Kav.62, Kuningan,
+                            Kelurahan Karet,Jakarta 12920</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Universitas Budi Luhur</td>
+                        <td>Jl. Ciledug Raya,
+                            RT.10/RW.2,
+                            Petukangan Utara,
+                            Kec. Pesanggrahan,
+                            Kota Jakarta Selatan,
+                            Daerah Khusus
+                            Ibukota Jakarta
+                            12260</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>SMK Jayawisata 2</td>
+                        <td>Jl. Pangkalan Jati II
+                            No.19, RT.7/RW.13,
+                            Cipinang Melayu,
+                            Kec. Makasar, Kota
+                            Jakarta Timur,
+                            Daerah Khusus
+                            Ibukota Jakarta
+                            13620</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Institut Sains dan Teknologi Al-Kamal
+                            (ISTA) Jakarta</td>
+                        <td>Jl. Kedoya Raya
+                            No.2, RT.7/RW.3,
+                            Kedoya Sel., Kec. Kb.
+                            Jeruk, Kota Jakarta
+                            Barat, Daerah
+                            Khusus Ibukota
+                            Jakarta 11520</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>E Sucore Amanah Berprestasi (SAB)</td>
+                        <td>Jalan Kebon Sirih no
+                            40 Babakam Ciamis
+                            su,ur Bandung kpta
+                            Bandung Jawa Barat</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Amik Mitra Gama</td>
+                        <td>Duri, beralamat di
+                            Jalan Kayangan No.
+                            99 Duri</td>
+                        <td style="text-align: center;">Perjanian kerjasama
+                            ( Nota
+                            Kesepahaman )</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>LEMBAGA PELATIHAN KERJA E17
+                            COURSE</td>
+                        <td>Green Lake City
+                            Rukan Sentra Niaga
+                            Blok J Nomor 3, Kel.
+                            Duri Kosambi, Kec.
+                            Cengkareng, Jakarta
+                            Barat</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>PT Evolusi Teknologi Solusi</td>
+                        <td>Green Lake City
+                            Rukan Sentra Niaga
+                            Blok J Nomor 3, Kel.
+                            Duri Kosambi, Kec.
+                            Cengkareng, Jakarta
+                            Barat</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>PT Sukarobot Academy Indonesia</td>
+                      <td>Jl Legok No 6 Rt 4 / Rw 5 Sukaraja Kabupaten Sukabumi</td>
+                      <td >
+                          MORANDUM OF UNDERSTANDING
+                          Untuk sertifikasi semua jejaring dari PT Sukarobot Academy Indonesia termasuk:
+                          <ol>
+                              <li>Universitas Nusa Putra (Magang, PKL, Event, dan Beasiswa)</li>
+                              <li>Dinas Pendidikan Kota Sukabumi (Pengembangan pendidikan robotik & Event robotik)</li>
+                              <li>Dinas Perpustakaan (Event tahunan)</li>
+                              <li>SMK AMAL ISLAMI (Workshop dan Uji Kompetensi)</li>
+                              <li>SMK PENGUJI (Workshop dan Uji Kompetensi)</li>
+                              <li>SMK IBADURAHMAN (Workshop dan Uji Kompetensi)</li>
+                              <li>SMK INFORMATIKA CBI (Workshop dan Uji Kompetensi)</li>
+                              <li>SMK ULUL ALBAB (Workshop dan Uji Kompetensi)</li>
+                              <li>PT DUTA TERANG ROBINSON (Pelatihan dan Project IoT)</li>
+                              <li>Pemerintah Kabupaten Sukabumi (Bupati Sukabumi) (Event Tahunan Robotik dalam rangka hari jadi kabupaten)</li>
+                              <li>Pemerintah Kota Sukabumi (Event Tahunan Robotik Merebutkan piala walikota Sukabumi)</li>
+                          </ol>
+                      </td>
+                  </tr>
+                  
+                    <tr>
+                        <td>15</td>
+                        <td>SMK Bina Nusa Mandiri</td>
+                        <td>Jl. Pengantin Ali
+                            No.4, RT.7/RW.6,
+                            Ciracas, Kec.
+                            Ciracas, Kota Jakarta
+                            Timur, Daerah
+                            Khusus Ibukota
+                            Jakarta 13730</td>
+                        <td style="text-align: center;">MORANDUM OF
+                            UNDERSTANDING</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+    <script>
+      const rowsPerPageSelect = document.getElementById('rowsPerPage');
+      const tableBody = document.getElementById('tableBody');
+      const searchInput = document.getElementById('searchInput');
+      const allRows = tableBody.getElementsByTagName('tr');
+    
+      // Function to display rows based on selected value
+      function updateRowsPerPage() {
+        const rowsPerPage = parseInt(rowsPerPageSelect.value);
+        
+        // Loop through all rows and hide those beyond the selected limit
+        for (let i = 0; i < allRows.length; i++) {
+          if (i < rowsPerPage) {
+            allRows[i].style.display = '';
+          } else {
+            allRows[i].style.display = 'none';
+          }
+        }
+      }
+    
+      // Function to search data based on input value
+      function searchData() {
+        const searchValue = searchInput.value.toLowerCase();
+        for (let i = 0; i < allRows.length; i++) {
+          const row = allRows[i];
+          const nama = row.cells[1].textContent.toLowerCase();
+          if (nama.includes(searchValue)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        }
+      }
+    
+      // Update rows when the select value changes
+      rowsPerPageSelect.addEventListener('change', updateRowsPerPage);
+    
+      // Update rows when the search input changes
+      searchInput.addEventListener('input', searchData);
+    
+      // Initialize display on page load
+      window.onload = updateRowsPerPage;
+    </script>
+
+       <!-- FOOTER -->
+   <footer class="bg-dark">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row justify-content-between">
+          
+          <div class="col-lg-3 col-sm-6">
+           
+              <img src="logo 3.png"  alt="" width="250px" height="auto" />
+            <div class="line"></div>
+            <p>
+              LSP SDM TIK adalah Lembaga Sertifikasi Profesi Pihak 3 yang terlisensi oleh BNSP dengan surat keputusan No . KEP.1342/BNSP/VII/2021 dan lisensi No.BNSPLSP1977-ID.
+            </p>
+            <div class="social-icons pb-4">
+              <a href="https://youtube.com/@lspsdmtik4858?si=HNf4TLqGRYRS4Nbr" target="_blank">
+                <i class="ri-youtube-fill"></i> <!-- YouTube Icon -->
+              </a>
+              <a href="https://twitter.com/usernameTwitter" target="_blank">
+                <i class="ri-twitter-fill"></i> <!-- Twitter Icon -->
+              </a>
+              <a href="https://facebook.com/usernameFacebook" target="_blank">
+                <i class="ri-facebook-fill"></i> <!-- Facebook Icon -->
+              </a>
+              <a href="https://www.linkedin.com/in/lsp-sdmtik-898955308/?originalSubdomain=id" target="_blank">
+                <i class="ri-linkedin-fill"></i> <!-- LinkedIn Icon -->
+              </a>
+              <a href="https://www.instagram.com/lsp_sdmtik?igsh=ajJxMmQwYnR2cWFk" target="_blank">
+                <i class="ri-instagram-fill"></i> <!-- Instagram Icon -->
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <h5 class="mb-0 text-white">ABOUT</h5>
+            <div class="line"></div>
+            <ul>
+              <li><a href="tentanglsp.html">Tentang LSP</a></li><hr>
+              <li><a href="visi-misi.html">VISI </a></li><hr>
+              <li><a href="visi-misi.html">MISI </a></li><hr>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <h5 class="mb-0 text-white">CONTACT</h5>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"> <br></i> Ruko Ketapang Indah, Blok B2, Jl. Kyai Haji Zainul Arifin No.33 & 34, 
+                RT.4/RW.7 Krukut, Kec. Taman Sari, 
+                Kota Jakarta Barat, Kota/Kabupaten Kota Administrasi 
+                Jakarta Barat, Provinsi DKI Jakarta.
+              </li>
+              <br>
+              <li><i class="fas fa-phone-alt"></i> 021-6340960 / 0811 292 5599</li>
+              <br>
+              <li><i class="fas fa-envelope"></i> lspmsdmtik@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".buttons").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+
+          var filter = $(this).attr("data-filter");
+
+          if (filter == "all") {
+            $(".image").show(400);
+          } else {
+            $(".image")
+              .not("." + filter)
+              .hide(200);
+            $(".image")
+              .filter("." + filter)
+              .show(400);
+          }
+        });
+
+        $(".gallery").magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("fixed-top");
+        } else {
+          navbar.classList.remove("fixed-top");
+        }
+      });
+    </script>
+    
+
+                    
+                

@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from themegrilldemos.com/suffice/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2023 23:16:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <style type="text/css">
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.html).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/index.html")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{delete Object.assign(arguments[0],{[t(e)]:arguments[0][e]})[e]})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<title>LSP | SDMTIK</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C400i%2C700%2C700i%7CPoppins%3A400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C400i%2C700%2C700i%7CPoppins%3A400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C400i%2C700%2C700i%7CPoppins%3A400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap" /></noscript>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Suffice &raquo; Feed" href="feed/index.html" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.13.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style6fb3.css?ver=6.1.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.wp-block-audio figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-audio figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-audio {
+  margin: 0 0 1em 0;
+}
+
+.wp-block-code {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Menlo, Consolas, monaco, monospace;
+  padding: 0.8em 1em;
+}
+
+.wp-block-embed figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-embed figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-embed {
+  margin: 0 0 1em 0;
+}
+
+.blocks-gallery-caption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .blocks-gallery-caption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image {
+  margin: 0 0 1em 0;
+}
+
+.wp-block-pullquote {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  margin-bottom: 1.75em;
+  color: currentColor;
+}
+.wp-block-pullquote cite,
+.wp-block-pullquote footer, .wp-block-pullquote__citation {
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-style: normal;
+}
+
+.wp-block-quote {
+  border-left: 0.25em solid currentColor;
+  margin: 0 0 1.75em 0;
+  padding-left: 1em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+  color: currentColor;
+  font-size: 0.8125em;
+  position: relative;
+  font-style: normal;
+}
+.wp-block-quote.has-text-align-right {
+  border-left: none;
+  border-right: 0.25em solid currentColor;
+  padding-left: 0;
+  padding-right: 1em;
+}
+.wp-block-quote.has-text-align-center {
+  border: none;
+  padding-left: 0;
+}
+.wp-block-quote.is-style-plain, .wp-block-quote.is-style-large, .wp-block-quote.is-large {
+  border: none;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-weight: bold;
+}
+
+.wp-block-search__button {
+  border: 1px solid #ccc;
+  padding: 0.375em 0.625em;
+}
+
+:where(.wp-block-group.has-background) {
+  padding: 1.25em 2.375em;
+}
+
+.wp-block-separator.has-css-opacity {
+  opacity: 0.4;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px solid currentColor;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-block-separator.has-alpha-channel-opacity {
+  opacity: initial;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots) {
+  border-bottom: none;
+  height: 1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 2px;
+}
+
+.wp-block-table {
+  margin: "0 0 1em 0";
+}
+.wp-block-table thead {
+  border-bottom: 3px solid;
+}
+.wp-block-table tfoot {
+  border-top: 3px solid;
+}
+.wp-block-table td,
+.wp-block-table th {
+  word-break: normal;
+}
+.wp-block-table figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-table figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-video figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video {
+  margin: 0 0 1em 0;
+}
+
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+</style>
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-stylec8d1.css?ver=1680082975' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-stylec8d1.css?ver=1680082975' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='wp-includes/css/classic-themes68b3.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='siteorigin-panels-front-css' href='wp-content/plugins/siteorigin-panels/css/front-flex.minfb69.css?ver=2.20.5' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout8c10.css?ver=7.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen8c10.css?ver=7.5.1' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce8c10.css?ver=7.5.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+
+<link rel='stylesheet' id='font-awesome-css' href='wp-content/themes/suffice/assets/css/font-awesome4906.css?ver=4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-css' href='wp-content/themes/suffice/assets/css/swiper6b00.css?ver=3.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='perfect-scrollbar-css' href='wp-content/themes/suffice/assets/css/perfect-scrollbar324e.css?ver=0.6.16' type='text/css' media='all' />
+<link rel='stylesheet' id='suffice-style-css' href='wp-content/themes/suffice/style6fb3.css?ver=6.1.3' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-includes/js/jquery/jquery.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/476.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embedb0bb.json?url=https%3A%2F%2Fthemegrilldemos.com%2Fsuffice%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed4969?url=https%3A%2F%2Fthemegrilldemos.com%2Fsuffice%2F&amp;format=xml" />
+	<!-- Google Tag Manager -->
+	<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WVJZ4TL');</script>
+	<!-- End Google Tag Manager -->
+		<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+			<style type="text/css">
+					.site-title,
+			.site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+				</style>
+		                <style type="text/css" media="all"
+                       id="siteorigin-panels-layouts-head">/* Layout 476 */ #pgc-476-0-0 , #pgc-476-1-0 , #pgc-476-2-0 , #pgc-476-3-0 , #pgc-476-4-0 , #pgc-476-5-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pg-476-0 , #pg-476-1 , #pg-476-2 , #pg-476-3 , #pg-476-4 , #pg-476-5 , #pl-476 .so-panel:last-of-type { margin-bottom:0px } #pl-476 .so-panel { margin-bottom:30px } #pg-476-0.panel-has-style > .panel-row-style, #pg-476-0.panel-no-style , #pg-476-1.panel-has-style > .panel-row-style, #pg-476-1.panel-no-style , #pg-476-2.panel-has-style > .panel-row-style, #pg-476-2.panel-no-style , #pg-476-3.panel-has-style > .panel-row-style, #pg-476-3.panel-no-style , #pg-476-4.panel-has-style > .panel-row-style, #pg-476-4.panel-no-style , #pg-476-5.panel-has-style > .panel-row-style, #pg-476-5.panel-no-style { -webkit-align-items:flex-start;align-items:flex-start } #pg-476-1> .panel-row-style { background-color:#ffffff;padding:80px 0px 95px 0px } #pg-476-2> .panel-row-style { background-color:#f7f7f7;padding:60px 0px 50px 0px } #panel-476-2-0-0> .panel-widget-style { padding:0px 0px 0px 0px } #pg-476-3> .panel-row-style { background-color:#ffffff;padding:35px 0px 35px 0px } #pg-476-4> .panel-row-style { background-color:#edf0fa;padding:60px 0px 90px 0px } #pgc-476-4-0 { align-self:auto } #pg-476-5> .panel-row-style { background-color:#ffffff;padding:60px 0px 90px 0px } @media (max-width:780px){ #pg-476-0.panel-no-style, #pg-476-0.panel-has-style > .panel-row-style, #pg-476-0 , #pg-476-1.panel-no-style, #pg-476-1.panel-has-style > .panel-row-style, #pg-476-1 , #pg-476-2.panel-no-style, #pg-476-2.panel-has-style > .panel-row-style, #pg-476-2 , #pg-476-3.panel-no-style, #pg-476-3.panel-has-style > .panel-row-style, #pg-476-3 , #pg-476-4.panel-no-style, #pg-476-4.panel-has-style > .panel-row-style, #pg-476-4 , #pg-476-5.panel-no-style, #pg-476-5.panel-has-style > .panel-row-style, #pg-476-5 { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-476-0 > .panel-grid-cell , #pg-476-0 > .panel-row-style > .panel-grid-cell , #pg-476-1 > .panel-grid-cell , #pg-476-1 > .panel-row-style > .panel-grid-cell , #pg-476-2 > .panel-grid-cell , #pg-476-2 > .panel-row-style > .panel-grid-cell , #pg-476-3 > .panel-grid-cell , #pg-476-3 > .panel-row-style > .panel-grid-cell , #pg-476-4 > .panel-grid-cell , #pg-476-4 > .panel-row-style > .panel-grid-cell , #pg-476-5 > .panel-grid-cell , #pg-476-5 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pl-476 .panel-grid-cell { padding:0 } #pl-476 .panel-grid .panel-grid-cell-empty { display:none } #pl-476 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px } #pg-476-1> .panel-row-style { padding:30px 0px 45px 0px } #panel-476-1-0-0> .panel-widget-style { padding:20px 0px 20px 0px } #pg-476-2> .panel-row-style { padding:35px 35px 35px 35px } #panel-476-2-0-0> .panel-widget-style { padding:0px 0px 0px 0px } #pg-476-4> .panel-row-style , #pg-476-5> .panel-row-style { padding:35px 0px 35px 0px }  } </style><link rel="icon" href="wp-content/uploads/sites/59/2017/08/favicon.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/sites/59/2017/08/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/sites/59/2017/08/favicon.png" />
+<meta name="msapplication-TileImage" content="https://themegrilldemos.com/suffice/wp-content/uploads/sites/59/2017/08/favicon.png" />
+		<style type="text/css" id="wp-custom-css">
+			.woocommerce-breadcrumb { 
+display: none;
+}		</style>
+		<style id="kirki-inline-styles"></style></head>
+
+<body data-rsssl=1 class="home page-template page-template-page-templates page-template-page-builder page-template-page-templatespage-builder-php page page-id-476 wp-custom-logo wp-embed-responsive theme-suffice siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home woocommerce-no-js full-width wide">
+
+
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 0 0"
+		width="0"
+		height="0"
+		focusable="false"
+		role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
+	>
+		<defs>
+			<filter id="wp-duotone-dark-grayscale">
+				<feColorMatrix
+					color-interpolation-filters="sRGB"
+					type="matrix"
+					values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB" >
+					<feFuncR type="table" tableValues="0 0.49803921568627" />
+					<feFuncG type="table" tableValues="0 0.49803921568627" />
+					<feFuncB type="table" tableValues="0 0.49803921568627" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 0 0"
+		width="0"
+		height="0"
+		focusable="false"
+		role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
+	>
+		<defs>
+			<filter id="wp-duotone-grayscale">
+				<feColorMatrix
+					color-interpolation-filters="sRGB"
+					type="matrix"
+					values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB" >
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 0 0"
+		width="0"
+		height="0"
+		focusable="false"
+		role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
+	>
+		<defs>
+			<filter id="wp-duotone-purple-yellow">
+				<feColorMatrix
+					color-interpolation-filters="sRGB"
+					type="matrix"
+					values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB" >
+					<feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 0 0"
+		width="0"
+		height="0"
+		focusable="false"
+		role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
+	>
+		<defs>
+			<filter id="wp-duotone-blue-red">
+				<feColorMatrix
+					color-interpolation-filters="sRGB"
+					type="matrix"
+					values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB" >
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 0.27843137254902" />
+					<feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 0 0"
+		width="0"
+		height="0"
+		focusable="false"
+		role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
+	>
+		<defs>
+			<filter id="wp-duotone-midnight">
+				<feColorMatrix
+					color-interpolation-filters="sRGB"
+					type="matrix"
+					values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB" >
+					<feFuncR type="table" tableValues="0 0" />
+					<feFuncG type="table" tableValues="0 0.64705882352941" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 0 0"
+		width="0"
+		height="0"
+		focusable="false"
+		role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
+	>
+		<defs>
+			<filter id="wp-duotone-magenta-yellow">
+				<feColorMatrix
+					color-interpolation-filters="sRGB"
+					type="matrix"
+					values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB" >
+					<feFuncR type="table" tableValues="0.78039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.94901960784314" />
+					<feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 0 0"
+		width="0"
+		height="0"
+		focusable="false"
+		role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
+	>
+		<defs>
+			<filter id="wp-duotone-purple-green">
+				<feColorMatrix
+					color-interpolation-filters="sRGB"
+					type="matrix"
+					values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB" >
+					<feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.44705882352941 0.4" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+
+	
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 0 0"
+		width="0"
+		height="0"
+		focusable="false"
+		role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
+	>
+		<defs>
+			<filter id="wp-duotone-blue-orange">
+				<feColorMatrix
+					color-interpolation-filters="sRGB"
+					type="matrix"
+					values="
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+						.299 .587 .114 0 0
+					"
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB" >
+					<feFuncR type="table" tableValues="0.098039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.66274509803922" />
+					<feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+
+	
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+	<header id="masthead" class="site-header logo-left-menu-right header-sticky header-sticky-desktop header-sticky-style-half-slide" role="banner">
+		<div class="header-outer-wrapper">
+			<div class="header-inner-wrapper">
+									<div class="header-top">
+						<div class="container container--flex">
+							<div class="header-top-left-section">
+								
+<div class="header-info-container">
+	<ul class="header-info-links">
+		<li class="header-info-location"><i class="fa fa-map-marker"></i><span>Teknologi Informasi & Kreatif</span></li>
+		<li class="header-info-phone"><i class="fa fa-phone"></i><span>021-6340960 / 0811 292 5599</span></li>
+		<li class="header-info-email"><i class="fa fa-envelope"></i><span>lspmsdmtik@gmail.com</span></li>
+	</ul>
+</div> <!-- end header-info-container -->
+							</div>
+
+							<div class="header-top-right-section">
+								
+<div class="header-social-links">
+	<div class="menu-social-menu-container"><ul id="menu-social-menu" class="social-menu"><li id="menu-item-443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-443"><a href="http://facebook.com/"><span class="screen-reader-text">Facebook</span></a></li>
+<li id="menu-item-444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-444"><a href="http://twitter.com/"><span class="screen-reader-text">Twitter</span></a></li>
+<li id="menu-item-445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-445"><a href="http://linkedin.com/"><span class="screen-reader-text">Linkedin</span></a></li>
+</ul></div></div> <!-- end header-social-links -->
+							</div>
+						</div> <!-- .container -->
+					</div>  <!-- .header-top -->
+				
+				<div class="header-bottom">
+					<div class="container">
+						<div class="header-bottom-left-section">
+							<div class="site-identity-container">
+			<div class="logo-container">
+			<a href="index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="119" height="44" src="wp-content/uploads/sites/59/2017/06/logo.png" class="custom-logo" alt="Suffice" decoding="async" /></a>		</div> <!-- .logo-container -->
+	
+		<div class="site-branding">
+					<p class="site-title"><a href="index.html" rel="home">Suffice</a></p>
+					<p class="site-description">Just another ThemeGrill Demo site</p>
+			</div><!-- .site-branding -->
+</div> <!-- .logo -->
+													</div>
+
+						<div class="header-bottom-right-section">
+							
+<nav id="site-navigation" class="main-navigation navigation-default menu-has-submenu-shadow menu-has-submenu-devider menu-has-submenu-indicator" role="navigation">
+	<header class="nav-header">
+		<h3 class="nav-title">Suffice</h3>
+		<a href="#" class="nav-close">close</a>
+	</header>
+
+	<div class="menu-primary"><ul id="menu-primary" class="primary-menu"><li id="menu-item-521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-476 current_page_item menu-item-521"><a href="#" aria-current="page">Home</a></li>
+<li id="menu-item-484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-484"><a href="#">Informasi</a>
+<ul class="sub-menu">
+	<li id="menu-item-485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-485"><a href="#">Berita</a></li>
+</ul>
+</li>
+<li id="menu-item-517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-517"><a href="#">Download</a></li>
+<!-- <li id="menu-item-502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-502"><a href="shop/index.html">Shop</a></li> -->
+<!-- <li id="menu-item-520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-520"><a href="news/index.html">Blog</a></li> -->
+<!-- <li id="menu-item-483" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-483"><a href="#">Pages</a> -->
+<!-- <ul class="sub-menu">
+	<li id="menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a href="team-2/index.html">Team</a></li>
+	<li id="menu-item-497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-497"><a href="contact-us/index.html">Contact Us</a></li>
+</ul> -->
+</li>
+</ul></div></nav><!-- #site-navigation -->
+
+<div class="header-action-container">
+	
+			<ul class="navigation-header-action">
+							<li class="header-action-item-search search-form-style-dropdown">
+					<span class="screen-reader-text">Show Search Form</span>
+					<i class="fa fa-search"></i>
+					<div class="header-action-search-form">
+						<form role="search" method="get" class="search-form" action="#">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>					</div>
+				</li>
+			
+			<!-- <li class="header-action-item-cart">
+	<i class="fa fa-shopping-cart">
+		<span class="header-action-badge">0</span>
+	</i>
+</li> -->
+		</ul>
+		
+<div class="navigation-togglers-wrapper">
+	<button class="menu-toggle menu-toggle-mobile" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text">Primary Menu for Mobile</span> <i class="fa fa-bars"></i></button>
+	<button class="menu-toggle menu-toggle-desktop menu-toggle-navigation-default" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text">Primary Menu for Desktop</span> <i class="fa"></i></button>
+</div> <!-- .navigation-togglers-wrapper -->
+</div> <!-- .header-action-container -->
+						</div>
+					</div> <!-- .container -->
+				</div> <!-- .header-bottom -->
+			</div>  <!-- .header-inner-wrapper -->
+		</div> <!-- .header-outer-wrapper -->
+
+			</header><!-- #masthead -->
+
+		<div id="heading">
+			</div>
+
+	<div id="content" class="site-content">
+		<div class="container">
+
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+
+		
+<article id="post-476" class="post-476 page type-page status-publish hentry">
+
+	
+	
+	<div class="entry-content">
+		<div id="pl-476"  class="panel-layout" ><div id="pg-476-0"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-476-0" data-stretch-type="full-stretched" ><div id="pgc-476-0-0"  class="panel-grid-cell" ><div id="panel-476-0-0-0" class="so-panel widget widget_themegrill_suffice_slider tg-section tg-slider-widget panel-first-child panel-last-child" data-index="0" >
+	<div class="slider slider-hide-controls slider-controls-flat slider-height--default">
+		<div class="swiper-container" data-swiper-autoplay="true">
+			<div class="swiper-wrapper">
+										<div class="swiper-slide">
+							<div class="slider-content slider-content-default slider-content--left">
+								<div class="container">
+									<div class="slider-content-inner">
+																					<h3 class="slider-title">LSP | SDMTIK</h3>
+										
+																					<p class="slider-description">Teknologi Informasi & Kreatif</p>
+										
+																					<a class="btn btn-default btn-rounded btn-medium btn-primary" href="#pg-476-1"> Tentang Kita </a>
+																			</div> <!-- slider-content-inner -->
+								</div> <!-- .container -->
+							</div> <!-- .slider-content -->
+							<figure class="slider-thumbnail">
+								<img src="wp-content/uploads/sites/59/2017/06/main-slider.jpg" alt="Perfect for Agency" />
+							</figure>
+						</div> <!-- swiper-slide -->
+												<div class="swiper-slide">
+							<div class="slider-content slider-content-default slider-content--left">
+								<div class="container">
+									<div class="slider-content-inner">
+																					<h3 class="slider-title">BNSP</h3>
+										
+																					<p class="slider-description">Badan Nasional Setifikat Profesi</p>
+										
+																					<a class="btn btn-black btn-rounded btn-medium btn-primary" href="https://bnsp.go.id/"> Tentang BNSP </a>
+																			</div> <!-- slider-content-inner -->
+								</div> <!-- .container -->
+							</div> <!-- .slider-content -->
+							<figure class="slider-thumbnail">
+								<img src="wp-content/uploads/sites/59/2017/06/slider-1-1.jpg" alt="Focused on Quality" />
+							</figure>
+						</div> <!-- swiper-slide -->
+									</div> <!-- end swiper-wrapper -->
+
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div> <!-- end swiper-container -->
+
+	</div> <!-- end slider -->
+</div></div></div></div>
+
+<div id="pg-476-1"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-476-1" data-stretch-type="full" ><div id="pgc-476-1-0"  class="panel-grid-cell" ><div id="panel-476-1-0-0" class="so-panel widget widget_siteorigin-panels-builder panel-first-child panel-last-child" data-index="1" ><div class="panel-widget-style panel-widget-style-for-476-1-0-0" ><div id="pl-w596317c197c59"  class="panel-layout" ><div id="pg-w596317c197c59-0"  class="panel-grid panel-no-style" ><div id="pgc-w596317c197c59-0-0"  class="panel-grid-cell" ><div id="panel-w596317c197c59-0-0-0" class="so-panel widget widget_themegrill_suffice_iconbox tg-iconbox-container panel-first-child panel-last-child" data-index="0" ><div class="icon-box icon-box-center icon-box-hexagon">
+			<div class="icon-box-icon" style=color:#ffffff;font-size:32px;background-color:#dd9ebd;>
+			<div class="icon-box-icon-container">
+				<div class="icon-box-inner-icon">
+					<!-- <i class="fa fa-code"></i> -->
+				</div>
+			</div>
+		</div>
+			<div class="icon-box-description">
+					<h5 class="icon-box-title">Tujuan Sertifikasi profesi</h5>
+							<p class="icon-box-content"><b>Tujuan Sertifikasi profesi</b> untuk memastikan pada kompetensi seseorang yang telah didapatkan melalui pembelajaran, pelatihan, maupun pengalaman kerja. Kredibilitas suatu sertifikasi sangat ditentukan oleh organisasi atau lembaga pemberi sertifikasinya.</p>
+							<!-- <a class="icon-box-readmore" href="#">READ MORE</a> -->
+			</div>
+</div> <!-- end icon-box -->
+</div></div><div id="pgc-w596317c197c59-0-1"  class="panel-grid-cell" ><div id="panel-w596317c197c59-0-1-0" class="so-panel widget widget_themegrill_suffice_iconbox tg-iconbox-container panel-first-child panel-last-child" data-index="1" ><div class="icon-box icon-box-center icon-box-hexagon">
+			<div class="icon-box-icon" style=color:#ffffff;font-size:32px;background-color:#a0c695;>
+			<div class="icon-box-icon-container">
+				<div class="icon-box-inner-icon">
+					<!-- <i class="fa fa-support"></i> -->
+				</div>
+			</div>
+		</div>
+			<div class="icon-box-description">
+					<h5 class="icon-box-title">Badan Nasional Sertifikasi Profesi</h5>
+							<p class="icon-box-content"><b>Badan Nasional Sertifikasi Profesi</b> memberikan
+lisensi dengan surat keputusan No .
+KEP.1342/BNSP/VII/2021 dan lisensi No. BNSPLSP1977-ID kepada LSP SDM TIK Pihak 3 yang
+masa berlakunya sampai 5 Juli 2026. LSP SDM TIK
+akan melakukan serta memastikan sertifikasi yang
+credible untuk mengantarkan kualitas SDM dan
+industry yang accountable di bidang TI.
+</p><!-- 
+							<a class="icon-box-readmore" href="#">READ MORE</a> -->
+			</div>
+</div> <!-- end icon-box -->
+</div></div><div id="pgc-w596317c197c59-0-2"  class="panel-grid-cell" ><div id="panel-w596317c197c59-0-2-0" class="so-panel widget widget_themegrill_suffice_iconbox tg-iconbox-container panel-first-child panel-last-child" data-index="2" ><div class="icon-box icon-box-center icon-box-hexagon">
+			<div class="icon-box-icon" style=color:#ffffff;font-size:32px;background-color:#7be0f2;>
+			<div class="icon-box-icon-container">
+				<div class="icon-box-inner-icon">
+					<!-- <i class="fa fa-rocket"></i> -->
+				</div>
+			</div>
+		</div>
+			<div class="icon-box-description">
+					<h5 class="icon-box-title">LSP SDM TIK Pihak 3</h5>
+							<p class="icon-box-content"><b>LSP SDM TIK Pihak 3</b> mendapatkan dukungan
+dari asosiasi industri dan dukungan dari regulator
+kementerian komunikasi dan informatika (Kominfo)
+No. B- 59/KOMINFO/BLSDM/KS.01.07/05/2021
+dengan harapan bisa berperan penting dalam
+peningkatan daya saing dan produkvitas SDM tenaga
+kerja di bidang TI.</p>
+							<!-- <a class="icon-box-readmore" href="#">READ MORE</a> -->
+			</div>
+</div> <!-- end icon-box -->
+</div></div></div></div></div></div></div></div></div><div id="pg-476-2"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-476-2" data-stretch-type="full" ><div id="pgc-476-2-0"  class="panel-grid-cell" ><div id="panel-476-2-0-0" class="so-panel widget widget_themegrill_suffice_title tg-title-container panel-first-child" data-index="2" ><div class="panel-widget-style panel-widget-style-for-476-2-0-0" ><div class="title title-default title-center">
+	<h3 class="title-title">Galeri</h3>
+
+			<p class="sub-title"></p>
+	
+	
+	</div>
+</div></div><div id="panel-476-2-0-1" class="so-panel widget widget_themegrill_suffice_portfolio tg-portfolio-container panel-last-child" data-index="3" ><div class="portfolio-container"><nav class="portfolio-navigation portfolio-navigation-normal portfolio-navigation-center"><ul class="navigation-portfolio"><li class="active"><a data-filter="*">All</a></li><li><a data-filter='.photography'>Internal</a></li>
+<li><a data-filter='.web-design'>External</a></li>
+</ul></nav><ul class="portfolio-items row text-on-hover"><li class="portfolio-item col-md-3 web-design " data-category="web-design "><figure class="portfolio-item-thumbnail"><img width="572" height="545" src="wp-content/uploads/kunjungan-masehat.jpg" class="attachment-suffice-thumbnail-portfolio size-suffice-thumbnail-portfolio wp-post-image" alt="" decoding="async" /><figcaption class="portfolio-item-description"><h5 class="portfolio-item-title">Kunjungan Masehat</h5><span class="portfolio-item-categories">External</span></figcaption></figure></li>
+
+<li class="portfolio-item col-md-3 web-design " data-category="web-design "><figure class="portfolio-item-thumbnail"><img width="572" height="545" src="wp-content/uploads/kunjungan-cmc.jpeg" class="attachment-suffice-thumbnail-portfolio size-suffice-thumbnail-portfolio wp-post-image" alt="" decoding="async" loading="lazy" /><figcaption class="portfolio-item-description"><h5 class="portfolio-item-title">Kunjungan CMC</h5><span class="portfolio-item-categories">External</span></figcaption></figure></li>
+
+<li class="portfolio-item col-md-3 photography " data-category="photography "><figure class="portfolio-item-thumbnail"><img width="572" height="545" src="wp-content/uploads/Ketua-LSP-SDMTIK.jpg" class="attachment-suffice-thumbnail-portfolio size-suffice-thumbnail-portfolio wp-post-image" alt="" decoding="async" loading="lazy" /><figcaption class="portfolio-item-description"><h5 class="portfolio-item-title">LSP SDMTIK</h5><span class="portfolio-item-categories">Internal</span></figcaption></figure></li>
+
+<li class="portfolio-item col-md-3 photography " data-category="photography "><figure class="portfolio-item-thumbnail"><img width="572" height="545" src="wp-content/uploads/ketua-dan-BNSP.jpg" class="attachment-suffice-thumbnail-portfolio size-suffice-thumbnail-portfolio wp-post-image" alt="" decoding="async" loading="lazy" /><figcaption class="portfolio-item-description"><h5 class="portfolio-item-title">Ketua dan BNSP</h5><span class="portfolio-item-categories">Internal</span></figcaption></figure></li>
+
+</ul><!-- /ul.portfolio-items --></div><!-- /.portfolio-container --></div></div></div></div>
+
+<div id="pg-476-5"  class="panel-grid panel-has-style" ><div class="panel-row-style panel-row-style-for-476-5" ><div id="pgc-476-5-0"  class="panel-grid-cell" ><div id="panel-476-5-0-0" class="so-panel widget widget_themegrill_suffice_title tg-title-container panel-first-child" data-index="8" ><div class="title title-default title-center">
+  <div style="display: flex; justify-content: center; align-items:center; flex-wrap: wrap; gap: 20px;">
+    <img style="height: 100px;" src="wp-content/uploads/logos/sdmtik.png" alt="">
+    <img style="height: 120px;" src="wp-content/uploads/logos/bnsp.png" alt="">
+    <img style="height: 100px;" src="wp-content/uploads/logos/aptiknas.png" alt="">
+    <img style="height: 100px;" src="wp-content/uploads/logos/kominfo.jpg" alt="">
+  </div>
+
+	</div>
+</div>
+
+</div></div></div></div>	</div><!-- .entry-content -->
+
+	
+	
+</article><!-- #post-## -->
+
+	</main><!-- #main -->
+</div><!-- #primary -->
+
+
+
+		</div><!-- #content -->
+	</div> <!-- .container -->
+
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="footer-top">
+			<div class="container">
+				
+<div class="footer-widgets footer-widgets-col--four">
+			<div  class="footer-widget-area footer-sidebar-2">
+							
+		<section id="recent-posts-5" class="widget widget_recent_entries">
+		<h2 class="widget-title" style="font-weight: 900;">Tujuan</h2>
+		<ul>
+					<p style="color: white;">Melakukan sertifikasi profesi dengan latar
+belakang pendidikan di bidang Teknologi
+Informasi guna meningkatkan daya saing di
+dunia kerja Nasional maupun Internasional;</p>
+					<p style="color: white;">Sertifikasi yang dilakukan oleh LSP SDM TIK
+mencakup profesi pada bidang Teknologi
+Informasi dan Kreatif;</p>
+					<p style="color: white;">Keberadaan LSP SDM TIK selalu terbuka
+dengan perkembangan ilmu dan teknologi
+yang sedang berkembang dan bersifat
+antisipatif terhadap kecenderungan
+perkembangan ilmu dan teknologi terkait;</p>
+					<p style="color: white;">Tercapainya standar mutu sertifikasi
+kompetensi dibidang TIK yang unggul dan
+Profesional.</p>
+					</ul>
+
+		</section>					</div>
+			<div class="footer-widget-area footer-sidebar-3">
+							<section id="categories-5" class="widget widget_categories"><h2 class="widget-title" style="font-weight: 900;">VISI</h2>
+			<ul>
+					<p style="color: white;">Menjadi Lembaga Sertifikasi Profesi yang
+terpercaya dalam Membangun Sumber Daya
+Manusia Indonesia yang Kompeten di Bidang
+TIK yang siap menyambut ERA CONVERGENCE
+berdasar Teknologi IT dan Teknologi Industri
+KREATIF.
+</p>
+			</ul>
+
+			</section>					</div>
+			<div class="footer-widget-area footer-sidebar-4">
+							<section id="nav_menu-1" class="widget widget_nav_menu"><h2 class="widget-title" style="font-weight: 900;">MISI</h2><div class="menu-useful-links-container"><ul id="menu-useful-links" class="menu">
+                <p style="color: white;">Mengembangkan skema sertifikasi yang sesuai
+dengan kebutuhan industri;</p>
+<p style="color: white;"> Membangun SDM LSP yang solid dan kompeten
+sesuai dengan fungsinya;
+</p><p style="color: white;"> Mengembangkan sistem sertifikasi sesuai
+dengan perkembangan teknologi dan
+manajemen;
+</p><p style="color: white;"> Mendapatkan pengakuan hasil sertifikasi dari
+pemangku kepentingan baik nasional maupun
+internasional;
+</p><p style="color: white;"> Membentuk Tempat Uji Kompetensi (TUK) di
+seluruh wilayah provinsi yang ada di dalam negeri
+dan di luar negeri sesuai kebutuhan.
+                </p>
+</ul></div></section>					</div>
+	</div> <!-- footer-widgets -->
+			</div> <!-- end container -->
+		</div> <!-- end footer-top -->
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="footer-bottom-container">
+					<div class="site-info">
+						<div class="copyright">Copyright &copy; 2023  All rights reserved. by mabarstudio. </div>					</div><!-- .site-info -->
+
+					
+	<div class="footer-navigation">
+		<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="footer-menu"><<!-- li id="menu-item-510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-510"><a href="#">Support</a></li>
+<li id="menu-item-481" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-481"><a href="#">FAQs</a></li> -->
+</ul></div>	</div> <!-- .footer-navigation -->
+				</div> <!-- .footer-bottom-container -->
+			</div> <!-- .container -->
+		</div> <!-- .footer -->
+	</footer><!-- #colophon -->
+
+	
+</div><!-- #page -->
+<div class="suffice-body-dimmer">
+</div>
+
+<div class="mini-cart-sidebar">
+	<div class="mini-cart-sidebar-inner">
+		<header class="mini-cart-header">
+			<p class="mini-cart__title">Shopping Cart </p>
+			<span class="mini-cart__close">Close <i class="fa fa-close"></i></span>
+		</header>
+
+		<div class="mini-cart-inner">
+			
+
+	<p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+
+
+		</div>
+	</div>
+</div> <!-- .mini-cart -->
+<nav id="mobile-navigation" class="mobile-navigation" role="navigation">
+	<header class="nav-header">
+		<h3 class="nav-title">Suffice</h3>
+		<a href="#" class="nav-close">close</a>
+	</header>
+
+	<div class="menu-primary"><ul id="menu-primary-1" class="primary-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-476 current_page_item menu-item-521"><a href="index.html" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-484"><a href="#">Informasi</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-485"><a href="#">Berita</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-517"><a href="#">Download</a></li>
+</ul></div></nav><!-- #site-navigation -->
+
+                <style type="text/css" media="all"
+                       id="siteorigin-panels-layouts-footer">/* Layout w596317c197c59 */ #pgc-w596317c197c59-0-0 , #pgc-w596317c197c59-0-1 , #pgc-w596317c197c59-0-2 , #pgc-w596317c197c59-0-3 { width:25%;width:calc(25% - ( 0.75 * 30px ) ) } #pl-w596317c197c59 .so-panel { margin-bottom:30px } #pl-w596317c197c59 .so-panel:last-of-type { margin-bottom:0px } #pg-w596317c197c59-0.panel-has-style > .panel-row-style, #pg-w596317c197c59-0.panel-no-style { -webkit-align-items:flex-start;align-items:flex-start } @media (max-width:780px){ #pg-w596317c197c59-0.panel-no-style, #pg-w596317c197c59-0.panel-has-style > .panel-row-style, #pg-w596317c197c59-0 { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-w596317c197c59-0 > .panel-grid-cell , #pg-w596317c197c59-0 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-w596317c197c59-0-0 , #pgc-w596317c197c59-0-1 , #pgc-w596317c197c59-0-2 { margin-bottom:30px } #pl-w596317c197c59 .panel-grid-cell { padding:0 } #pl-w596317c197c59 .panel-grid .panel-grid-cell-empty { display:none } #pl-w596317c197c59 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } /* Layout w5fe1bc7554579 */ #pgc-w5fe1bc7554579-0-0 , #pgc-w5fe1bc7554579-0-1 , #pgc-w5fe1bc7554579-0-2 , #pgc-w5fe1bc7554579-0-3 { width:25%;width:calc(25% - ( 0.75 * 30px ) ) } #pl-w5fe1bc7554579 .so-panel { margin-bottom:30px } #pl-w5fe1bc7554579 .so-panel:last-of-type { margin-bottom:0px } #pg-w5fe1bc7554579-0.panel-has-style > .panel-row-style, #pg-w5fe1bc7554579-0.panel-no-style { -webkit-align-items:flex-start;align-items:flex-start } @media (max-width:780px){ #pg-w5fe1bc7554579-0.panel-no-style, #pg-w5fe1bc7554579-0.panel-has-style > .panel-row-style, #pg-w5fe1bc7554579-0 { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-w5fe1bc7554579-0 > .panel-grid-cell , #pg-w5fe1bc7554579-0 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-w5fe1bc7554579-0-0 , #pgc-w5fe1bc7554579-0-1 , #pgc-w5fe1bc7554579-0-2 { margin-bottom:30px } #pl-w5fe1bc7554579 .panel-grid-cell { padding:0 } #pl-w5fe1bc7554579 .panel-grid .panel-grid-cell-empty { display:none } #pl-w5fe1bc7554579 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } /* Layout w5fe1bc755470e */ #pgc-w5fe1bc755470e-0-0 , #pgc-w5fe1bc755470e-0-2 { width:20%;width:calc(20% - ( 0.8 * 30px ) ) } #pgc-w5fe1bc755470e-0-1 { width:60%;width:calc(60% - ( 0.4 * 30px ) ) } #pl-w5fe1bc755470e .so-panel { margin-bottom:30px } #pl-w5fe1bc755470e .so-panel:last-of-type { margin-bottom:0px } #pg-w5fe1bc755470e-0.panel-has-style > .panel-row-style, #pg-w5fe1bc755470e-0.panel-no-style { -webkit-align-items:flex-start;align-items:flex-start } @media (max-width:780px){ #pg-w5fe1bc755470e-0.panel-no-style, #pg-w5fe1bc755470e-0.panel-has-style > .panel-row-style, #pg-w5fe1bc755470e-0 { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-w5fe1bc755470e-0 > .panel-grid-cell , #pg-w5fe1bc755470e-0 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-w5fe1bc755470e-0-0 , #pgc-w5fe1bc755470e-0-1 { margin-bottom:30px } #pl-w5fe1bc755470e .panel-grid-cell { padding:0 } #pl-w5fe1bc755470e .panel-grid .panel-grid-cell-empty { display:none } #pl-w5fe1bc755470e .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style>	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<style id='core-block-supports-inline-css' type='text/css'>
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js?ver=2.7.0-wc.7.5.1' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/suffice\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/suffice\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/themegrilldemos.com\/suffice\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.js?ver=7.5.1' id='wc-add-to-cart-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.js?ver=2.1.4-wc.7.5.1' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/suffice\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/suffice\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.js?ver=7.5.1' id='woocommerce-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/suffice\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/suffice\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_a031294fc11e83e189f31a14bbf854a5","fragment_name":"wc_fragments_a031294fc11e83e189f31a14bbf854a5","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.js?ver=7.5.1' id='wc-cart-fragments-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+class RocketBrowserCompatibilityChecker {
+
+	constructor( options ) {
+		this.passiveSupported = false;
+
+		this._checkPassiveOption( this );
+		this.options = this.passiveSupported ? options : false;
+	}
+
+	/**
+	 * Initializes browser check for addEventListener passive option.
+	 *
+	 * @link https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Safely_detecting_option_support
+	 * @private
+	 *
+	 * @param self Instance of this object.
+	 * @returns {boolean}
+	 */
+	_checkPassiveOption( self ) {
+		try {
+			const options = {
+				// This function will be called when the browser attempts to access the passive property.
+				get passive() {
+					self.passiveSupported = true;
+					return false;
+				}
+			};
+
+			window.addEventListener( 'test', null, options );
+			window.removeEventListener( 'test', null, options );
+		} catch ( err ) {
+			self.passiveSupported = false;
+		}
+	}
+
+	/**
+	 * Checks if the browser supports requestIdleCallback and cancelIdleCallback. If no, shims its behavior with a polyfills.
+	 *
+	 * @link @link https://developers.google.com/web/updates/2015/08/using-requestidlecallback
+	 */
+	initRequestIdleCallback() {
+		if ( ! 'requestIdleCallback' in window ) {
+			window.requestIdleCallback = ( cb ) => {
+				const start = Date.now();
+				return setTimeout( () => {
+					cb( {
+						didTimeout: false,
+						timeRemaining: function timeRemaining() {
+							return Math.max( 0, 50 - ( Date.now() - start ) );
+						}
+					} );
+				}, 1 );
+			};
+		}
+
+		if ( ! 'cancelIdleCallback' in window ) {
+			window.cancelIdleCallback = ( id ) => clearTimeout( id );
+		}
+	}
+
+	/**
+	 * Detects if data saver mode is on.
+	 *
+	 * @link https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/save-data/#detecting_the_save-data_setting
+	 *
+	 * @returns {boolean|boolean}
+	 */
+	isDataSaverModeOn() {
+		return (
+			'connection' in navigator
+			&&
+			true === navigator.connection.saveData
+		);
+	}
+
+	/**
+	 * Checks if the browser supports link prefetch.
+	 *
+	 * @returns {boolean|boolean}
+	 */
+	supportsLinkPrefetch() {
+		const elem = document.createElement( 'link' );
+		return (
+			elem.relList
+			&&
+			elem.relList.supports
+			&&
+			elem.relList.supports( 'prefetch' )
+			&&
+			window.IntersectionObserver
+			&&
+			'isIntersecting' in IntersectionObserverEntry.prototype
+		);
+	}
+
+	isSlowConnection() {
+		return (
+			'connection' in navigator
+			&&
+			'effectiveType' in navigator.connection
+			&&
+			(
+				'2g' === navigator.connection.effectiveType
+				||
+				'slow-2g' === navigator.connection.effectiveType
+			)
+		)
+	}
+}
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/suffice\/checkout\/|\/suffice\/cart\/|\/suffice\/my-account\/|\/suffice\/wc-api\/v(.*)|(\/[^\/]+)?\/(index\\.php\/)?(.*)wp\\-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/themegrilldemos.com\/suffice","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+class RocketPreloadLinks {
+
+	constructor( browser, config ) {
+		this.browser = browser;
+		this.config  = config;
+		this.options = this.browser.options;
+
+		this.prefetched = new Set;
+		this.eventTime  = null;
+		this.threshold  = 1111;
+		this.numOnHover = 0;
+	}
+
+	/**
+	 * Initializes the handler.
+	 */
+	init() {
+		if (
+			! this.browser.supportsLinkPrefetch()
+			||
+			this.browser.isDataSaverModeOn()
+			||
+			this.browser.isSlowConnection()
+		) {
+			return;
+		}
+
+		this.regex = {
+			excludeUris: RegExp( this.config.excludeUris, 'i' ),
+			images: RegExp( '.(' + this.config.imageExt + ')$', 'i' ),
+			fileExt: RegExp( '.(' + this.config.fileExt + ')$', 'i' )
+		};
+
+		this._initListeners( this );
+	}
+
+	/**
+	 * Initializes the event listeners.
+	 *
+	 * @private
+	 *
+	 * @param self instance of this object, used for binding "this" to the listeners.
+	 */
+	_initListeners( self ) {
+		// Setting onHoverDelay to -1 disables the "on-hover" feature.
+		if ( this.config.onHoverDelay > -1 ) {
+			document.addEventListener( 'mouseover', self.listener.bind( self ), self.listenerOptions );
+		}
+
+		document.addEventListener( 'mousedown', self.listener.bind( self ), self.listenerOptions );
+		document.addEventListener( 'touchstart', self.listener.bind( self ), self.listenerOptions );
+	}
+
+	/**
+	 * Event listener. Processes when near or on a valid <a> hyperlink.
+	 *
+	 * @param Event event Event instance.
+	 */
+	listener( event ) {
+		const linkElem = event.target.closest( 'a' );
+		const url      = this._prepareUrl( linkElem );
+		if ( null === url ) {
+			return;
+		}
+
+		switch ( event.type ) {
+			case 'mousedown':
+			case 'touchstart':
+				this._addPrefetchLink( url );
+				break;
+			case 'mouseover':
+				this._earlyPrefetch( linkElem, url, 'mouseout' );
+		}
+	}
+
+	/**
+	 *
+	 * @private
+	 *
+	 * @param Element|null linkElem
+	 * @param object url
+	 * @param string resetEvent
+	 */
+	_earlyPrefetch( linkElem, url, resetEvent ) {
+		const doPrefetch = () => {
+			falseTrigger = null;
+
+			// Start the rate throttle: 1 sec timeout.
+			if ( 0 === this.numOnHover ) {
+				setTimeout( () => this.numOnHover = 0, 1000 );
+			}
+			// Bail out when exceeding the rate throttle.
+			else if ( this.numOnHover > this.config.rateThrottle ) {
+				return;
+			}
+
+			this.numOnHover++;
+			this._addPrefetchLink( url );
+		};
+
+		// Delay to avoid false triggers for hover/touch/tap.
+		let falseTrigger = setTimeout( doPrefetch, this.config.onHoverDelay );
+
+		// On reset event, reset the false trigger timer.
+		const reset = () => {
+			linkElem.removeEventListener( resetEvent, reset, { passive: true } );
+			if ( null === falseTrigger ) {
+				return;
+			}
+
+			clearTimeout( falseTrigger );
+			falseTrigger = null;
+		};
+		linkElem.addEventListener( resetEvent, reset, { passive: true } );
+	}
+
+	/**
+	 * Adds a <link rel="prefetch" href="<url>"> for the given URL.
+	 *
+	 * @param string url The Given URL to prefetch.
+	 */
+	_addPrefetchLink( url ) {
+		this.prefetched.add( url.href );
+
+		return new Promise( ( resolve, reject ) => {
+			const elem   = document.createElement( 'link' );
+			elem.rel     = 'prefetch';
+			elem.href    = url.href;
+			elem.onload  = resolve;
+			elem.onerror = reject;
+
+			document.head.appendChild( elem );
+		} ).catch(() => {
+			// ignore and continue.
+		});
+	}
+
+	/**
+	 * Prepares the target link's URL.
+	 *
+	 * @private
+	 *
+	 * @param Element|null linkElem Instance of the link element.
+	 * @returns {null|*}
+	 */
+	_prepareUrl( linkElem ) {
+		if (
+			null === linkElem
+			||
+			typeof linkElem !== 'object'
+			||
+			! 'href' in linkElem
+			||
+			// Link prefetching only works on http/https protocol.
+			[ 'http:', 'https:' ].indexOf( linkElem.protocol ) === -1
+		) {
+			return null;
+		}
+
+		const origin   = linkElem.href.substring( 0, this.config.siteUrl.length );
+		const pathname = this._getPathname( linkElem.href, origin );
+		const url      = {
+			original: linkElem.href,
+			protocol: linkElem.protocol,
+			origin: origin,
+			pathname: pathname,
+			href: origin + pathname
+		};
+
+		return this._isLinkOk( url ) ? url : null;
+	}
+
+	/**
+	 * Gets the URL's pathname. Note: ensures the pathname matches the permalink structure.
+	 *
+	 * @private
+	 *
+	 * @param object url Instance of the URL.
+	 * @param string origin The target link href's origin.
+	 * @returns {string}
+	 */
+	_getPathname( url, origin ) {
+		let pathname = origin
+			? url.substring( this.config.siteUrl.length )
+			: url;
+
+		if ( ! pathname.startsWith( 'https://themegrilldemos.com/' ) ) {
+			pathname = '/' + pathname;
+		}
+
+		if ( this._shouldAddTrailingSlash( pathname ) ) {
+			return pathname + '/';
+		}
+
+		return pathname;
+	}
+
+	_shouldAddTrailingSlash( pathname ) {
+		return (
+			this.config.usesTrailingSlash
+			&&
+			! pathname.endsWith( 'https://themegrilldemos.com/' )
+			&&
+			! this.regex.fileExt.test( pathname )
+		);
+	}
+
+	/**
+	 * Checks if the given link element is okay to process.
+	 *
+	 * @private
+	 *
+	 * @param object url URL parts object.
+	 *
+	 * @returns {boolean}
+	 */
+	_isLinkOk( url ) {
+		if ( null === url || typeof url !== 'object' ) {
+			return false;
+		}
+
+		return (
+			! this.prefetched.has( url.href )
+			&&
+			url.origin === this.config.siteUrl // is an internal document.
+			&&
+			url.href.indexOf( '?' ) === -1 // not a query string.
+			&&
+			url.href.indexOf( '#' ) === -1 // not an anchor.
+			&&
+			! this.regex.excludeUris.test( url.href ) // not excluded.
+			&&
+			! this.regex.images.test( url.href ) // not an image.
+		);
+	}
+
+	/**
+	 * Named static constructor to encapsulate how to create the object.
+	 */
+	static run() {
+		// Bail out if the configuration not passed from the server.
+		if ( typeof RocketPreloadLinksConfig === 'undefined' ) {
+			return;
+		}
+
+		const browser  = new RocketBrowserCompatibilityChecker( {
+			capture: true,
+			passive: true
+		} );
+		const instance = new RocketPreloadLinks( browser, RocketPreloadLinksConfig );
+		instance.init();
+	}
+}
+
+RocketPreloadLinks.run();
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/skip-link-focus-fix.js?ver=20151215' id='suffice-skip-link-focus-fix-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/swiper.jquery.js?ver=3.4.0' id='swiper-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/jquery.waypoints.js?ver=4.0.1' id='waypoints-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/jquery.visible.js?ver=1.0.0' id='visible-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/headroom.js?ver=0.9' id='headroom-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/jQuery.headroom.js?ver=0.9' id='headroom-jquery-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/perfect-scrollbar.jquery.js?ver=0.6.16' id='perfect-scrollbar-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/isotope.pkgd.js?ver=3.0.2' id='isotope-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/countUp.js?ver=1.8.3' id='countup-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/smooth-scroll.js?ver=10.2.1' id='smooth-scroll-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/gumshoe.js?ver=3.3.3' id='gumshoe-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/themes/suffice/assets/js/suffice-custom.js?ver=1.0' id='suffice-custom-js'></script>
+<script type='text/javascript' id='siteorigin-panels-front-styles-js-extra'>
+/* <![CDATA[ */
+var panelsStyles = {"fullContainer":"body","stretchRows":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://themegrilldemos.com/suffice/wp-content/plugins/siteorigin-panels/js/styling.min.js?ver=2.20.5' id='siteorigin-panels-front-styles-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js","");</script>
+</body>
+
+<!-- Mirrored from themegrilldemos.com/suffice/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2023 23:16:30 GMT -->
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1692781369 -->
