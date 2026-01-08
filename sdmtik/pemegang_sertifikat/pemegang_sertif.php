@@ -60,7 +60,7 @@ include 'koneksi.php';
         <tr>
             <td><?= $no++; ?></td>
             <td>
-    <a href="biodata.php?id=<?= $data['id']; ?>">
+    <a href="sdmtik\pemegang_sertifikat\biodata_sertif.php?id=<?= $data['id']; ?>">
         <?= $data['nama_peserta']; ?>
     </a>
 </td>
