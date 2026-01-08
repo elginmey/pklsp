@@ -59,7 +59,12 @@ include 'koneksi.php';
     ?>
         <tr>
             <td><?= $no++; ?></td>
-            <td><?= $data['nama_peserta']; ?></td>
+            <td>
+    <a href="biodata.php?id=<?= $data['id']; ?>">
+        <?= $data['nama_peserta']; ?>
+    </a>
+</td>
+
             <td><?= $data['no_sertifikat']; ?></td>
             <td><?= $data['skema_kompetensi']; ?></td>
             <td><?= $data['tanggal_lahir']; ?></td>
