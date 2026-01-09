@@ -44,10 +44,9 @@ include 'koneksi.php';
     <tr>
         <th>No</th>
         <th>Nama Peserta</th>
-        <th>No Sertifikat</th>
+        <th>No Registrasi</th>
         <th>Skema Kompetensi</th>
-        <th>Tanggal Lahir</th>
-        <th>Hasil</th>
+        <th>Status</th>
     </tr>
 
     <?php
@@ -62,8 +61,8 @@ include 'koneksi.php';
             <td><?= $data['nama_peserta']; ?></td>
             <td><?= $data['no_sertifikat']; ?></td>
             <td><?= $data['skema_kompetensi']; ?></td>
-            <td><?= $data['tanggal_lahir']; ?></td>
-            <td><?= $data['hasil']; ?></td>
+            <td><?= $data['tanggal_keputusan']; ?></td>
+
         </tr>
     <?php
         }
