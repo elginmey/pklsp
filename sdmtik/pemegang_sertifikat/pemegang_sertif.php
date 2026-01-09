@@ -99,7 +99,21 @@ $query = mysqli_query(
             <td><?= $data['nama_peserta']; ?></td>
             <td><?= $data['no_sertifikat']; ?></td>
             <td><?= $data['skema_kompetensi']; ?></td>
-            <td><?= $data['tanggal_keputusan']; ?></td>
+            <td>
+                <?php
+                $tanggal_keputusan = $data['tanggal_keputusan'];
+                $tanggal_expired = date('Y-m-d', strtotime('+3 years', strtotime($tanggal_keputusan)));
+                $hari_ini = date('Y-m-d');
+
+                if ($hari_ini <= $tanggal_expired) {
+                    echo '<span style="color:green;font-weight:bold;">AKTIF</span>';
+                } else {
+                    echo '<span style="color:red;font-weight:bold;">EXPIRED</span>';
+                }
+                ?>
+            </td>
+
+            </td>
         </tr>
     <?php
         }
