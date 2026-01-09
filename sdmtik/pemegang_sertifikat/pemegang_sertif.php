@@ -83,6 +83,14 @@ $jumlah_expired = mysqli_fetch_assoc(mysqli_query($koneksi, "SELECT COUNT(*) tot
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+<link rel="stylesheet" href="css/stylee.css">
+
 <title>Data Pemegang Sertifikat</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
@@ -120,6 +128,32 @@ body::before {
     0% { transform: translate(0, 0); }
     100% { transform: translate(50px, 50px); }
 }
+
+/* NAVBAR HEIGHT FIX */
+.navbar {
+    min-height: 90px;              /* tinggi navbar */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* LOGO */
+.navbar-brand img {
+    height: 60px;                  /* paksa tinggi logo */
+    width: auto;
+}
+
+/* MENU */
+.navbar-nav .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 18px;
+}
+
+/* ALIGN MENU TENGAH */
+.navbar .container-fluid {
+    align-items: center;
+}
+
 
 .container {
     max-width: 1400px;
@@ -520,9 +554,193 @@ td {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    width: 100vw;
+    background: #1f2428;
+    color: #cfd8dc;
+    padding: 70px 0;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: 80px;
+}
+
+.footer-logo img {
+    width: 260px;
+    margin-bottom: 15px;
+}
+
+.footer-desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+    line-height: 1.8;
+
+.footer-title {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-title::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #3b82f6;
+    display: block;
+    margin-top: 6px;
+}
+
+.footer-links a {
+    display: block;
+    color: #cfd8dc;
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #2e3338;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #3b82f6;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.footer-contact i {
+    color: #3b82f6;
+    margin-right: 8px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: #2a2f34;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #3b82f6;
+    transform: translateY(-4px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
 </style>
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid px-4">
+
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="/sdmtik/lsp.png" alt="Logo LSP" width="150" class="me-2">
+    </a>
+
+    <!-- TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">LSP SDM TIK</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/sdmtik/index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+
+          <!-- PROFIL -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <i class="fas fa-user"></i> Profil
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/sdmtik/visi-misi.html">Visi & Misi</a></li>
+              <li><a class="dropdown-item" href="/sdmtik/struktur organisasi.html">Struktur Organisasi</a></li>
+              <li><a class="dropdown-item" href="/sdmtik/lihatmitra.php">Mitra Kerja</a></li>
+              <li><a class="dropdown-item" href="/sdmtik/tentanglsp.html">Tentang LSP</a></li>
+            </ul>
+          </li>
+
+          <!-- SERTIFIKASI -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <i class="fas fa-certificate"></i> Informasi Sertifikasi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/sdmtik/skema.html">Skema Sertifikasi</a></li>
+              <li><a class="dropdown-item" href="/sdmtik/lihat_tuk.php">Tempat Uji Kompetensi</a></li>
+              <li><a class="dropdown-item" href="/sdmtik/lihatasesor.php">Asesor Kompetensi</a></li>
+              <li><a class="dropdown-item" href="/sdmtik/skkni.html">SKKNI</a></li>
+              <li><a class="dropdown-item" href="/sdmtik/pemegang_sertifikat/pemegang_sertif.php">Pemegang Sertifikat</a></li>
+            </ul>
+          </li>
+
+          <!-- MEDIA -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <i class="fas fa-photo-video"></i> Media
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/sdmtik/berita.html">Berita</a></li>
+              <li><a class="dropdown-item" href="/sdmtik/gallery.html">Galeri</a></li>
+              <li><a class="dropdown-item" href="https://instagram.com" target="_blank">Instagram</a></li>
+              <li><a class="dropdown-item" href="https://youtube.com" target="_blank">YouTube</a></li>
+            </ul>
+          </li>
+
+          <!-- LOGIN -->
+          <li class="nav-item">
+            <a class="nav-link" href="/sdmtik/login.php">
+              <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
 <div class="container">
     <!-- Header -->
@@ -558,7 +776,7 @@ td {
                 <input
                     type="text"
                     name="search"
-                    placeholder="Cari berdasarkan ID, Nama, atau No Sertifikat..."
+                    placeholder="Search..."
                     value="<?= htmlspecialchars($search) ?>"
                     onkeyup="autoSubmit()"
                 >
@@ -696,6 +914,63 @@ td {
     <?php endif; ?>
 </div>
 
+<footer>
+    <div class="footer-container">
+
+        <!-- KIRI -->
+        <div class="footer-logo">
+            <img src="/sdmtik/logo 3.png" alt="LSP SDM TIK">
+            <p class="footer-desc">
+                LSP SDM TIK adalah Lembaga Sertifikasi Profesi Pihak 3
+                yang terlisensi oleh BNSP dengan surat keputusan No.
+                KEP.1342/BNSP/VII/2021 dan lisensi No.BNSPLSP1977-ID.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- TENGAH -->
+        <div>
+            <div class="footer-title">ABOUT</div>
+            <div class="footer-links">
+                <a href="/sdmtik/tentanglsp.html">Tentang LSP</a>
+                <a href="/sdmtik/visi-misi.html">VISI</a>
+                <a href="/sdmtik/visi-misi.html">MISI</a>
+            </div>
+        </div>
+
+        <!-- KANAN -->
+        <div class="footer-contact">
+            <div class="footer-title">CONTACT</div>
+
+            <p>
+                <i class="ri-map-pin-2-fill"></i>
+                Ruko Ketapang Indah, Blok B2, Jl. Kyai Haji Zainul Arifin
+                No.33 & 34, RT.4/RW.7 Krukut, Kec. Taman Sari,
+                Kota Jakarta Barat, Provinsi DKI Jakarta.
+            </p>
+
+            <p>
+                <i class="ri-phone-fill"></i>
+                021-6340960 / 0811 292 5599
+            </p>
+
+            <p>
+                <i class="ri-mail-fill"></i>
+                lspsdmtik@gmail.com
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+
 <!-- Auto Submit Script -->
 <script>
 let timer = null;
@@ -716,6 +991,9 @@ document.querySelectorAll('a[href^="?"]').forEach(anchor => {
     });
 });
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
