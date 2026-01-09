@@ -59,12 +59,7 @@ include 'koneksi.php';
     ?>
         <tr>
             <td><?= $no++; ?></td>
-            <td>
-    <a href="sdmtik\pemegang_sertifikat\biodata_sertif.php?id=<?= $data['id']; ?>">
-        <?= $data['nama_peserta']; ?>
-    </a>
-</td>
-
+            <td><?= $data['nama_peserta']; ?></td>
             <td><?= $data['no_sertifikat']; ?></td>
             <td><?= $data['skema_kompetensi']; ?></td>
             <td><?= $data['tanggal_lahir']; ?></td>
@@ -77,6 +72,8 @@ include 'koneksi.php';
     }
     ?>
 </table>
+
+
 
 </body>
 </html>
